@@ -51,6 +51,13 @@ public class SensorResource {
     }
     
     @PUT
+    @Path("/{sensorId}/maintenance")
+    public Response setMaintenance(@PathParam("sensorId") String sensorId) {
+        sensorService.updateSensorStatus(sensorId, "MAINTENANCE");
+        return Response.ok("{\"status\":\"MAINTENANCE mode activated\"}").build();
+    }
+    
+    @PUT
     @Path("/{sensorId}/status")
     public Response updateStatus(@PathParam("sensorId") String sensorId,
                                   @QueryParam("mode") String mode) {
