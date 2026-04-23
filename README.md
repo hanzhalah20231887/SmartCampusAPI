@@ -33,7 +33,7 @@ Before you begin, ensure you have the following installed:
 
 bash
  1. Clone the repository
-git clone https://github.com/YOUR_USERNAME/SmartCampusAPI.git
+git clone https://github.com/hanzhalah20231887/SmartCampusAPI
 cd SmartCampusAPI
 
  2. Build the WAR file
